@@ -1,14 +1,17 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-    firstName: 'Selene',
-    lastName:  'Yu',
+    firstName: 'Victor',
+    lastName:  'Agbeleye',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Design Engineer',
-    avatar:    '/images/avatar.jpg',
-    location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+    role:      'Data Engineer',
+    // avatar:    '/Logo.png',
+    avatar:    '/images/projects/project-01/avatar-01.png',
+    hero:      '/images/web_illustration_dark.gif',
+    logo:      '/images/Logo.png',
+    location:  'Europe/London',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
     languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
 }
 
@@ -24,22 +27,22 @@ const social = [
     {
         name: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/once-ui-system/nextjs-starter',
+        link: 'https://github.com/AgVicCodes',
     },
     {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/once-ui/',
+        link: 'https://www.linkedin.com/in/victoragbeleye/',
     },
     {
         name: 'X',
         icon: 'x',
-        link: '',
+        link: 'https://x.com/VictorAgbeleye',
     },
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:example@gmail.com',
+        link: 'mailto:victoragbeleye@gmail.com',
     },
 ]
 
@@ -47,8 +50,9 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
-    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    hero: `${person.hero}`,
+    headline: <>Data engineer and <br/>SQL Developer</>,
+    subline: <>I'm Victor, a data engineer studying at the <InlineCode>University Of Hertfordshire</InlineCode>, <br/>formerly working as a backend developer and SQL developer at <InlineCode>Technaunum</InlineCode>. <br/>In my free time, I enjoy working on my personal projects.</>
 }
 
 const about = {

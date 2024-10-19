@@ -36,3 +36,14 @@ export function Projects({ range, locale }: ProjectsProps) {
         </Flex>
     );
 }
+
+export function Hero() {
+
+    return (
+        <Flex
+            fillWidth gap="l" marginBottom="40" paddingX="l"
+            direction="column">
+            <img src="images/web_illustration_dark.gif" alt="hero_gif" />
+        </Flex>
+    );
+}

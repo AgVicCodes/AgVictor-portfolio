@@ -83,7 +83,7 @@ export const Header = () => {
                 alignItems="center"
                 textVariant="body-default-s">
                 { display.location && (
-                    <>{person.location}</>
+                    <img src = {person.logo} height = {50}/>
                 )}
             </Flex>
             <Flex

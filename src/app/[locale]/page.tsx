@@ -2,6 +2,8 @@ import React from 'react';
 
 import { Heading, Flex, Text, Button,  Avatar, RevealFx } from '@/once-ui/components';
 import { Projects } from '@/components/work/Projects';
+// import { Hero } from '@/components/work/Projects';
+
 
 import { baseURL, routes, renderContent } from '@/app/resources'; 
 import { Mailchimp } from '@/components';
@@ -81,14 +83,17 @@ export default function Home(
 					<Flex
 						direction="column"
 						fillWidth maxWidth="s" gap="m">
-						<RevealFx translateY="4">
+						{/* <RevealFx translateY="4">
+							<Hero />
+						</RevealFx> */}
+						<RevealFx translateY="4" delay={0.3}>
 							<Heading
 								wrap="balance"
 								variant="display-strong-l">
 								{home.headline}
 							</Heading>
 						</RevealFx>
-						<RevealFx translateY="8" delay={0.2}>
+						<RevealFx translateY="8" delay={0.6}>
 							<Text
 								wrap="balance"
 								onBackground="neutral-weak"
@@ -96,7 +101,7 @@ export default function Home(
 								{home.subline}
 							</Text>
 						</RevealFx>
-						<RevealFx translateY="12" delay={0.4}>
+						<RevealFx translateY="12" delay={0.9}>
 							<Button
 								data-border="rounded"
 								href={`/${locale}/about`}
@@ -119,7 +124,7 @@ export default function Home(
 					</Flex>
 				
 			</Flex>
-			<RevealFx translateY="16" delay={0.6}>
+			<RevealFx translateY="16" delay={1.2}>
 				<Projects range={[1,1]} locale={locale}/>
 			</RevealFx>
 			{routes['/blog'] && (
