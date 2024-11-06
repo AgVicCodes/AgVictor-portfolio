@@ -8,11 +8,11 @@ const person = {
     },
     role:      'Data Engineer',
     // avatar:    '/Logo.png',
-    avatar:    '/images/projects/project-01/avatar-01.png',
+    avatar:    '/images/Victor.png',
     hero:      '/images/web_illustration_dark.gif',
     logo:      '/images/Logo.png',
     location:  'Europe/London',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    languages: ['English', 'French', 'German']  // optional: Leave the array empty if you don't want to display languages 'Hindi', 'Spanish'
 }
 
 const newsletter = {
@@ -73,19 +73,22 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+        description: <>Victor is a UK-based data engineer with a drive for transforming intricate data challenges into streamlined, impactful solutions. Victor’s expertise spans data pipeline development, database optimization, and the intersection of data engineering and cloud technology. Passionate about leveraging data to empower decision-making, he brings efficiency and innovation to every project.</>
     },
     work: {
         display: true, // set to false to hide this section
         title: 'Work Experience',
         experiences: [
             {
-                company: 'FLY',
-                timeframe: '2022 - Present',
-                role: 'Senior Design Engineer',
+                company: 'Technaunum',
+                timeframe: '2022 - 2023',
+                role: 'Backend Deleveloper and SQL Developer',
                 achievements: [
-                    <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
-                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
+                    <>Enhanced Database Performance: Redesigned database structures and optimized SQL queries, improving data retrieval speed by 40% and reducing response times for key reports by 25%.</>,
+                    <>Boosted Application Efficiency: Developed SQL queries, stored procedures, and triggers, supporting real-time data access across multiple applications and improving system reliability by 30%.</>,
+                    <>Automated Data Workflows: Automated data cleaning and transformation using Python, reducing manual effort by 50% and increasing data readiness for analytics by 35%.</>,
+                    <>Increased User Engagement: Built scalable web applications using React and Laravel, resulting in a 25% boost in user engagement and a 20% faster load time across platforms.</>,
+                    <>Streamlined UX/UI Design: Designed and tested interactive prototypes using Adobe XD and Figma, reducing the design iteration cycle by 20% and enhancing client satisfaction.</>
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
                     {
@@ -95,17 +98,17 @@ const about = {
                         height: 9
                     }
                 ]
-            },
-            {
-                company: 'Creativ3',
-                timeframe: '2018 - 2022',
-                role: 'Lead Designer',
-                achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
-                ],
-                images: [ ]
-            }
+            }//,
+            // {
+            //     company: 'Creativ3',
+            //     timeframe: '2018 - 2022',
+            //     role: 'Lead Designer',
+            //     achievements: [
+            //         <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
+            //         <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+            //     ],
+            //     images: [ ]
+            // }
         ]
     },
     studies: {
@@ -113,12 +116,12 @@ const about = {
         title: 'Studies',
         institutions: [
             {
-                name: 'University of Jakarta',
-                description: <>Studied software engineering.</>,
+                name: 'University of Hertfordshire',
+                description: <>Studied Data Science.</>,
             },
             {
-                name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
+                name: 'Redeemers University',
+                description: <>Studied Industrial Mathematics.</>,
             }
         ]
     },
