@@ -44,7 +44,7 @@ const TimeDisplay: React.FC<TimeDisplayProps> = ({ timeZone, locale = 'en-GB' })
 
     return (
         <>
-            {currentTime}
+            My Local Time: {currentTime}
         </>
     );
 };
@@ -156,7 +156,7 @@ export const Header = () => {
                         ))}
                     </Flex>
                 }
-                <Flex hide="s">
+                <Flex hide = "s">
                     { display.time && (
                         <TimeDisplay timeZone={person.location}/>
                     )}

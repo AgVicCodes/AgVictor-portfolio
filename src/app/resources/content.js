@@ -51,8 +51,14 @@ const home = {
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
     hero: `${person.hero}`,
-    headline: <>Data engineer and <br/>SQL Developer</>,
-    subline: <>I'm Victor, a data engineer studying at the <InlineCode>University Of Hertfordshire</InlineCode>, <br/>formerly working as a backend developer and SQL developer at <InlineCode>Technaunum</InlineCode>. <br/>In my free time, I enjoy working on my personal projects.</>
+    headline: <>Machine Learning Engineer and <br/>Software Developer</>,
+    subline: <> I'm Victor, a Software developer (Web and App) 
+                and an aspiring Machine Learning engineer currently working 
+                as a full stack developer at <InlineCode>Elle's Bliss</InlineCode> while studying 
+                at the <InlineCode>University Of Hertfordshire</InlineCode>, 
+                formerly working as a backend developer and SQL 
+                developer at <InlineCode>Technaunum</InlineCode>.
+                In my free time, I enjoy music, sports and working on personal projects.</>
 }
 
 const about = {
@@ -73,7 +79,7 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Victor is a UK-based data engineer with a drive for transforming intricate data challenges into streamlined, impactful solutions. Victor’s expertise spans data pipeline development, database optimization, and the intersection of data engineering and cloud technology. Passionate about leveraging data to empower decision-making, he brings efficiency and innovation to every project.</>
+        description: <>Victor is a UK-based Software Developer and Data Engineer with a drive for transforming intricate data challenges into streamlined, impactful solutions. Victor’s expertise spans data pipeline development, database optimization, and the intersection of data engineering and cloud technology. Passionate about leveraging data to empower decision-making, he brings efficiency and innovation to every project.</>
     },
     work: {
         display: true, // set to false to hide this section

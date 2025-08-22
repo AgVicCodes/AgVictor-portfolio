@@ -13,7 +13,7 @@ const routes = {
     '/':        true,
     '/about':   true,
     '/work':    true,
-    '/blog':    true,
+    // '/blog':    true,
     '/gallery': true,
 }
 
@@ -24,16 +24,16 @@ const protectedRoutes = {
 }
 
 const effects = {
-    gradient: true,
-    dots:     true,
-    lines:    false,
+    gradient: 1,
+    dots:     1,
+    lines:    0,
 }
 
 const style = {
     theme:       'dark',         // dark | light
     neutral:     'gray',         // sand | gray | slate
-    brand:       'aqua',         // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-    accent:      'magenta',       // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+    brand:       'indigo',         // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+    accent:      'green',       // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
     solid:       'contrast',     // color | contrast
     solidStyle:  'flat',         // flat | plastic
     border:      'playful',      // rounded | playful | conservative

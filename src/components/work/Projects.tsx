@@ -1,5 +1,6 @@
 import { getPosts } from '@/app/utils';
 import { Flex } from '@/once-ui/components';
+import React from 'react';
 
 import { ProjectCard } from '@/components';
 
@@ -33,17 +34,6 @@ export function Projects({ range, locale }: ProjectsProps) {
                     content={post.content}
                     avatars={post.metadata.team?.map((member) => ({ src: member.avatar })) || []}/>
             ))}
-        </Flex>
-    );
-}
-
-export function Hero() {
-
-    return (
-        <Flex
-            fillWidth gap="l" marginBottom="40" paddingX="l"
-            direction="column">
-            <img src="images/web_illustration_dark.gif" alt="hero_gif" />
         </Flex>
     );
 }

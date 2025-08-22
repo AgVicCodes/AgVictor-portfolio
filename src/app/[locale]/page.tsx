@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Heading, Flex, Text, Button,  Avatar, RevealFx } from '@/once-ui/components';
 import { Projects } from '@/components/work/Projects';
-// import { Hero } from '@/components/work/Projects';
+import { Hero } from '@/components/illustration';
 
 
 import { baseURL, routes, renderContent } from '@/app/resources'; 
@@ -83,10 +83,14 @@ export default function Home(
 					<Flex
 						direction="column"
 						fillWidth maxWidth="s" gap="m">
-						{/* <RevealFx translateY="4">
-							<Hero />
-						</RevealFx> */}
 						<RevealFx translateY="4" delay={0.3}>
+							<Flex
+							direction="column"
+							fillWidth maxWidth="s" gap="m" paddingBottom='l'>
+								<RevealFx translateY="4">
+									<Hero />
+								</RevealFx>
+							</Flex>
 							<Heading
 								wrap="balance"
 								variant="display-strong-l">
@@ -127,15 +131,15 @@ export default function Home(
 			<RevealFx translateY="16" delay={1.2}>
 				<Projects range={[1,1]} locale={locale}/>
 			</RevealFx>
-			{routes['/blog'] && (
+			{/* {routes['/blog'] && (
 				<Flex fillWidth paddingX="20">
 					<Posts range={[1,2]} columns="2" locale={locale}/>
 				</Flex>
-			)}
+			)} */}
 			<Projects range={[2]} locale={locale}/>
-			{ newsletter.display &&
+			{/* { newsletter.display &&
 				<Mailchimp newsletter={newsletter} />
-			}
+			} */}
 		</Flex>
 	);
 }
